@@ -1,8 +1,7 @@
 # BullishNeuralNets 🐂 🤖 💰
 
 
-<img src="https://github.com/santiagoSSAA/BullishNeuralNets/blob/main/OIG4.jpeg?raw=true" alt="Funny meme brain logo" border="1" height="200" width="200">
-
+<img src="static/images/readme_icon.jpeg" alt="Funny meme brain logo" border="1" height="200" width="200">
 
 BullishNeuralNets are neural networks trained in a 100% bullish environment, creating perpetually optimistic algorithms for trading. To the moon! 📈
 
