@@ -59,10 +59,10 @@ This project is licensed under the [Apache License 2.0](https://www.apache.org/l
 
 ## Credits 🙏
 
-This tutorial was created by [Your Name] and is based on the following resources:
+This tutorial was created by SantiagoSSAA and is based on the following resources:
 
 - [Flask Documentation](https://flask.palletsprojects.com/)
 - [TensorFlow Documentation](https://www.tensorflow.org/resources)
-- [Financial Data API] (link to the API provider)
+- [Alpha Vantage API](https://www.alphavantage.co/)
 
 Enjoy creating and learning! 🎉
