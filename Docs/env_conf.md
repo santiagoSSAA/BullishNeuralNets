@@ -8,7 +8,7 @@ To get started with the project, you'll need to have Python and several librarie
 
 2. **Install Required Libraries:** This project relies on several Python libraries, including Flask for web development, TensorFlow for machine learning, Pandas for data manipulation, and Numpy for numerical operations. You can install these libraries using pip, Python's package installer. Open your terminal or command prompt and run the following command:
 
-        pip install flask tensorflow pandas numpy
+        pip install -r requirements.txt
 
 ***This command will install the latest versions of Flask, TensorFlow, Pandas, and Numpy.***
 
@@ -30,7 +30,7 @@ This command will create a new virtual environment named env in your project dir
 
 Once the virtual environment is activated, you should see (env) prefixed to your terminal prompt, indicating that the virtual environment is active. With the virtual environment active, you can install the required libraries by running the same pip install command as before:
 
-        pip install flask tensorflow pandas numpy
+        pip install -r requirements.txt
 
 This will install the libraries within the virtual environment, keeping your system's global Python installation untouched.
 
