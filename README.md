@@ -20,13 +20,38 @@ The main goal is to teach engineering students and software engineers how to int
 
 ## Installation 🚀
 
-1. Clone this repo: `git clone https://github.com/your-username/BullishNeuralNets.git`
-2. Navigate to the project directory: `cd BullishNeuralNets`
-3. Create a Python virtual environment: `python -m venv env`
-4. Activate the virtual environment: `source env/bin/activate` # On Windows, use `env\Scripts\activate`
-5. Install dependencies: `pip install -r requirements.txt`
-6. Run the app: `flask run`
-7. Access the app at `http://localhost:5000` 🌐
+1. Clone this repo: 
+    ```shell
+    git clone https://github.com/your-username/BullishNeuralNets.git
+    ```
+2. Navigate to the project directory: 
+   ```shell
+   cd BullishNeuralNets
+   ```
+3. Create a Python virtual environment: 
+   ```shell
+   python -m venv env
+   ```
+
+4. Activate the virtual environment: 
+   ```shell
+   source env/bin/activate # On Windows, use env\Scripts\activate
+   ```
+
+5. Install dependencies: 
+   ```shell
+   pip install -r requirements.txt
+   ```
+
+6. Run the app: 
+   ```shell
+   flask run
+   ```
+
+7. Access the app at 
+   ```shell
+   http://localhost:5000
+   ```
 
 ## License 📄
 
