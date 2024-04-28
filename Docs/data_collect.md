@@ -30,11 +30,11 @@ There are various APIs available that provide access to historical stock price d
     # Print the data
     print(data)
     ```
-    Replace `'YOUR_API_KEY'` with the API key you obtained from Alpha Vantage, and `'AAPL'` with the stock symbol you want to retrieve data for. When you run this code, it will fetch and print the historical daily stock prices for the specified stock symbol.
+    Replace `'YOUR_API_KEY'` with the API key you obtained from Alpha Vantage, and `'AAPL'` with the [stock symbol you want](https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.alphavantage.co/query%3Ffunction%3DLISTING_STATUS%26apikey%3Ddemo&ved=2ahUKEwjc-LyjlcqFAxWOQTABHVNkDg0QFnoECBYQAQ&usg=AOvVaw2jcgxyGWwrti6Wv2kw_QWd) to retrieve data for. When you run this code, it will fetch and print the historical daily stock prices for the specified stock symbol.
 
 ## Show how to structure and clean data for use in the AI model
 
-The data retrieved from the Alpha Vantage API will be in a Pandas DataFrame format, which makes it easy to manipulate and clean the data. Here are some common steps you may need to perform:
+The data retrieved from the Alpha Vantage API will be in a [Pandas DataFrame](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.html) format, which makes it easy to manipulate and clean the data. Here are some common steps you may need to perform:
 
 1. **Handle missing data** Check for and handle any missing values in the data using Pandas' built-in functions like `dropna()` or `fillna()`.
 

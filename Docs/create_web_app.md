@@ -4,7 +4,6 @@ Now that we have a trained AI model for predicting stock prices, it's time to cr
 
 ## Basic structure of flask application
 
-Basic Structure of a Flask Application
 
 A Flask application consists of several components:
 
