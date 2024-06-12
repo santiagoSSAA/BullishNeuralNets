@@ -14,6 +14,8 @@ def index():
         # Get the stock symbol from the form
         stock_symbol = request.form['stock_symbol']
         
+        print(stock_symbol)
+        
         # Make a prediction using the trained model
         prediction = predict_stock_price(stock_symbol)
         
@@ -21,3 +23,6 @@ def index():
         return render_template('result.html', prediction=prediction)
     
     return render_template('index.html')
+
+if __name__ == '__main__':
+    app.run(debug=True)
