@@ -1,9 +1,14 @@
 import pandas as pd
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, jsonify
 
 # from model import loal_model, preprocess_data
 
 app = Flask(__name__)
+
+messages = [
+    {"text": "Hello and thank you for visiting MDBootstrap. Please click the video below.", "avatar": "https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava1-bg.webp"},
+    {"text": "Thank you, I really like your product.", "avatar": "https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava2-bg.webp"}
+]
 
 def predict_stock_price(stock_symbol):
     return "some_response¿?"
@@ -18,6 +23,28 @@ def create_mock_dataframe():
     }
     df = pd.DataFrame(data)
     return df
+
+@app.route('/get-messages', methods=['GET'])
+def get_messages(): 
+    return jsonify(messages)
+
+@app.route('/send-message', methods=['POST'])
+def send_message():
+    data = request.get_json()
+    new_message = {
+        "text": data.get('text'),
+        "avatar": "https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava1-bg.webp"  # Assuming a default avatar for new messages
+    }
+    messages.append(new_message)
+    return jsonify({"message": "Message received successfully"})
+
+@app.route('/chart-data', methods=['GET'])
+def chart_data():
+    data = {
+        'labels': ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+        'values': [65, 59, 80, 81, 56, 55, 40]
+    }
+    return jsonify(data)
 
 @app.route('/', methods=['GET', 'POST'])
 def index():

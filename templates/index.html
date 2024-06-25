@@ -39,6 +39,8 @@
         <h1 class="h2">Dashboard</h1>
       </div>
 
+      <div id="message">{{message}}</div>
+
       <div class="main__container">
 
 
@@ -62,6 +64,11 @@
                       <i class="fas fa-times"></i>
                     </div>
                     <div class="card-body">
+
+                      <!-- Chat messages container -->
+                      <div id="chatMessages">
+                        <!-- Messages will be dynamically added here -->
+                      </div>
 
                       <div class="d-flex flex-row justify-content-start mb-4">
                         <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava1-bg.webp"
@@ -88,10 +95,14 @@
                         </div>
                       </div>
 
+                      <!-- Input for new message -->
                       <div data-mdb-input-init class="form-outline">
                         <textarea class="form-control" id="textAreaExample" rows="4"></textarea>
                         <label class="form-label" for="textAreaExample">Type your message</label>
                       </div>
+
+                      <!-- Button to send message -->
+                      <button class="btn btn-primary mt-3" onclick="sendMessage()">Send</button>
 
                     </div>
                   </div>
@@ -100,6 +111,9 @@
 
             </div>
           </section>
+
+
+
           <!--Grafica Chart Canvas-->
           <canvas class="my-4 chartjs-render-monitor" id="myChart"></canvas>
         </div>
@@ -126,11 +140,6 @@
           </div>
 
         </div>
-
-
-
-
-
 
       </div>
 
@@ -164,6 +173,8 @@
   <script src="../static/js/chart.js"></script>
 
   <script src="../static/js/index.js"></script>
+
+  <script src="../static/js/chat.js"></script>
 
 </body>
 
