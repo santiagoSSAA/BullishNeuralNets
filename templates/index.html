@@ -35,227 +35,103 @@
   <!--Container for content-->
   <div class="container-fluid">
     <div class="row">
-      <div class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4" role="main">
-        <div
-          style="position: absolute; inset: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;"
-          class="chartjs-size-monitor">
-          <div class="chartjs-size-monitor-expand"
-            style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;">
-            <div style="position:absolute;width:1000000px;height:1000000px;left:0;top:0"></div>
-          </div>
-          <div class="chartjs-size-monitor-shrink"
-            style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;">
-            <div style="position:absolute;width:200%;height:200%;left:0; top:0"></div>
-          </div>
+      <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
+        <h1 class="h2">Dashboard</h1>
+      </div>
 
-        </div>
-        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
-          <h1 class="h2">Dashboard</h1>
-        </div>
+      <div class="main__container">
 
-        <!--Chart Canvas-->
-        <canvas class="my-4 chartjs-render-monitor" id="myChart" width="162" height="68"
-          style="display: block; width: 162px; height: 68px;"></canvas>
 
-        <!--Chat & Form-->
-        <section style="background-color: #eee;">
-          <div class="container py-5">
-        
-            <div class="row d-flex justify-content-center">
-              <div class="col-md-8 col-lg-6 col-xl-4">
-        
-                <!--Chat-->
-                <div class="card" id="chat1" style="border-radius: 15px;">
-                  <div
-                    class="card-header d-flex justify-content-between align-items-center p-3 bg-info text-white border-bottom-0"
-                    style="border-top-left-radius: 15px; border-top-right-radius: 15px;">
-                    <i class="fas fa-angle-left"></i>
-                    <p class="mb-0 fw-bold">Live chat</p>
-                    <i class="fas fa-times"></i>
-                  </div>
-                  <div class="card-body">
-        
-                    <div class="d-flex flex-row justify-content-start mb-4">
-                      <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava1-bg.webp"
-                        alt="avatar 1" style="width: 45px; height: 100%;">
-                      <div class="p-3 ms-3" style="border-radius: 15px; background-color: rgba(57, 192, 237,.2);">
-                        <p class="small mb-0">Hello and thank you for visiting MDBootstrap. Please click the video
-                          below.</p>
+        <!--Primera fila ( chat + gráfica)-->
+        <div class="hero">
+
+          <!--Chat-->
+          <section id="chat" style="background-color: #eee;">
+            <div class="container py-5">
+
+              <div class="row d-flex justify-content-center">
+                <div class="chat__container">
+
+                  <!--Chat-->
+                  <div class="card" id="chat1" style="border-radius: 15px;">
+                    <div
+                      class="card-header d-flex justify-content-between align-items-center p-3 bg-info text-white border-bottom-0"
+                      style="border-top-left-radius: 15px; border-top-right-radius: 15px;">
+                      <i class="fas fa-angle-left"></i>
+                      <p class="mb-0 fw-bold">Live chat</p>
+                      <i class="fas fa-times"></i>
+                    </div>
+                    <div class="card-body">
+
+                      <div class="d-flex flex-row justify-content-start mb-4">
+                        <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava1-bg.webp"
+                          alt="avatar 1" style="width: 45px; height: 100%;">
+                        <div class="p-3 ms-3" style="border-radius: 15px; background-color: rgba(57, 192, 237,.2);">
+                          <p class="small mb-0">Hello and thank you for visiting MDBootstrap. Please click the video
+                            below.</p>
+                        </div>
                       </div>
-                    </div>
-        
-                    <div class="d-flex flex-row justify-content-end mb-4">
-                      <div class="p-3 me-3 border" style="border-radius: 15px; background-color: #fbfbfb;">
-                        <p class="small mb-0">Thank you, I really like your product.</p>
+
+                      <div class="d-flex flex-row justify-content-end mb-4">
+                        <div class="p-3 me-3 border" style="border-radius: 15px; background-color: #fbfbfb;">
+                          <p class="small mb-0">Thank you, I really like your product.</p>
+                        </div>
+                        <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava2-bg.webp"
+                          alt="avatar 1" style="width: 45px; height: 100%;">
                       </div>
-                      <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava2-bg.webp"
-                        alt="avatar 1" style="width: 45px; height: 100%;">
-                    </div>
-        
-                    <div class="d-flex flex-row justify-content-start mb-4">
-                      <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava1-bg.webp"
-                        alt="avatar 1" style="width: 45px; height: 100%;">
-                      <div class="p-3 ms-3" style="border-radius: 15px; background-color: rgba(57, 192, 237,.2);">
-                        <p class="small mb-0">...</p>
+
+                      <div class="d-flex flex-row justify-content-start mb-4">
+                        <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava1-bg.webp"
+                          alt="avatar 1" style="width: 45px; height: 100%;">
+                        <div class="p-3 ms-3" style="border-radius: 15px; background-color: rgba(57, 192, 237,.2);">
+                          <p class="small mb-0">...</p>
+                        </div>
                       </div>
+
+                      <div data-mdb-input-init class="form-outline">
+                        <textarea class="form-control" id="textAreaExample" rows="4"></textarea>
+                        <label class="form-label" for="textAreaExample">Type your message</label>
+                      </div>
+
                     </div>
-        
-                    <div data-mdb-input-init class="form-outline">
-                      <textarea class="form-control" id="textAreaExample" rows="4"></textarea>
-                      <label class="form-label" for="textAreaExample">Type your message</label>
-                    </div>
-        
                   </div>
                 </div>
-
-                <!--Form-->
-                <div class="row">
-                  <div class="col-md-6">
-                    </div>
-                  <div class="col-md-6">
-                    <form method="post" action="/" onsubmit="return validateForm()" method="post" required>
-                      <label for="stock_symbol">Enter Stock Symbol:</label>
-                      <input type="text" id="stock_symbol" name="stock_symbol">
-                      <button type="submit">Predict</button>
-                    </form>
-                  </div>
-                </div>
-        
               </div>
+
             </div>
-        
-          </div>
-        </section>
-
-
-        <!--Table Sheet-->
-        <div class="table-responsive">
-          <table class="table table-striped table-sm">
-            <thead>
-              <tr>
-                <th>#</th>
-                <th>Header</th>
-                <th>Header</th>
-                <th>Header</th>
-                <th>Header</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>1,001</td>
-                <td>Lorem</td>
-                <td>ipsum</td>
-                <td>dolor</td>
-                <td>sit</td>
-              </tr>
-              <tr>
-                <td>1,002</td>
-                <td>amet</td>
-                <td>consectetur</td>
-                <td>adipiscing</td>
-                <td>elit</td>
-              </tr>
-              <tr>
-                <td>1,003</td>
-                <td>Integer</td>
-                <td>nec</td>
-                <td>odio</td>
-                <td>Praesent</td>
-              </tr>
-              <tr>
-                <td>1,003</td>
-                <td>libero</td>
-                <td>Sed</td>
-                <td>cursus</td>
-                <td>ante</td>
-              </tr>
-              <tr>
-                <td>1,004</td>
-                <td>dapibus</td>
-                <td>diam</td>
-                <td>Sed</td>
-                <td>nisi</td>
-              </tr>
-              <tr>
-                <td>1,005</td>
-                <td>Nulla</td>
-                <td>quis</td>
-                <td>sem</td>
-                <td>at</td>
-              </tr>
-              <tr>
-                <td>1,006</td>
-                <td>nibh</td>
-                <td>elementum</td>
-                <td>imperdiet</td>
-                <td>Duis</td>
-              </tr>
-              <tr>
-                <td>1,007</td>
-                <td>sagittis</td>
-                <td>ipsum</td>
-                <td>Praesent</td>
-                <td>mauris</td>
-              </tr>
-              <tr>
-                <td>1,008</td>
-                <td>Fusce</td>
-                <td>nec</td>
-                <td>tellus</td>
-                <td>sed</td>
-              </tr>
-              <tr>
-                <td>1,009</td>
-                <td>augue</td>
-                <td>semper</td>
-                <td>porta</td>
-                <td>Mauris</td>
-              </tr>
-              <tr>
-                <td>1,010</td>
-                <td>massa</td>
-                <td>Vestibulum</td>
-                <td>lacinia</td>
-                <td>arcu</td>
-              </tr>
-              <tr>
-                <td>1,011</td>
-                <td>eget</td>
-                <td>nulla</td>
-                <td>Class</td>
-                <td>aptent</td>
-              </tr>
-              <tr>
-                <td>1,012</td>
-                <td>taciti</td>
-                <td>sociosqu</td>
-                <td>ad</td>
-                <td>litora</td>
-              </tr>
-              <tr>
-                <td>1,013</td>
-                <td>torquent</td>
-                <td>per</td>
-                <td>conubia</td>
-                <td>nostra</td>
-              </tr>
-              <tr>
-                <td>1,014</td>
-                <td>per</td>
-                <td>inceptos</td>
-                <td>himenaeos</td>
-                <td>Curabitur</td>
-              </tr>
-              <tr>
-                <td>1,015</td>
-                <td>sodales</td>
-                <td>ligula</td>
-                <td>in</td>
-                <td>libero</td>
-              </tr>
-            </tbody>
-          </table>
+          </section>
+          <!--Grafica Chart Canvas-->
+          <canvas class="my-4 chartjs-render-monitor" id="myChart"></canvas>
         </div>
+
+
+        <!--Segunda fila ( Tabla y input para stock )-->
+        <div class="hero">
+          <!--Table Sheet-->
+          <div class="table-responsive">
+            <!-- Render the HTML table -->
+            {{ table|safe }}
+          </div>
+
+          <!--Form input stock-->
+          <div class="stock__form">
+            
+            <div>
+              <form method="post" action="/" onsubmit="return validateForm()" method="post" required>
+                <label for="stock_symbol">Enter Stock Symbol:</label>
+                <input type="text" id="stock_symbol" name="stock_symbol">
+                <button type="submit">Predict</button>
+              </form>
+            </div>
+          </div>
+
+        </div>
+
+
+
+
+
+
       </div>
 
     </div>

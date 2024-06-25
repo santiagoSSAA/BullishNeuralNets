@@ -8,6 +8,17 @@ app = Flask(__name__)
 def predict_stock_price(stock_symbol):
     return "some_response¿?"
 
+def create_mock_dataframe():
+    # Define mock data
+    data = {
+        'A': [1, 2, 3, 4, 5],
+        'B': ['foo', 'bar', 'baz', 'qux', 'quux'],
+        'C': [0.1, 0.2, 0.3, 0.4, 0.5],
+        'D': ['Yes', 'No', 'Yes', 'No', 'Yes']
+    }
+    df = pd.DataFrame(data)
+    return df
+
 @app.route('/', methods=['GET', 'POST'])
 def index():
     if request.method == 'POST':
@@ -22,7 +33,10 @@ def index():
         # Render the result template with the prediction
         return render_template('result.html', prediction=prediction)
     
-    return render_template('index.html')
+    table = create_mock_dataframe().to_html(
+        classes="table table-striped table-sm", index=False, justify="left"
+    )
+    return render_template('index.html', table=table)
 
 if __name__ == '__main__':
     app.run(debug=True)
